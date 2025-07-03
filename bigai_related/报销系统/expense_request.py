@@ -31,9 +31,40 @@ class InvoiceProcessor:
     
     def __init__(self):
         self.project_manager = "马晓健"
-        self.invoice_type = "增值税电子普通发票"
-        self.payment_type = "科研费用"
-        self.subject_detail = "科研耗材"
+        
+        # 发票类型选项
+        self.invoice_type_options = {
+            "1": "增值税专用发票",
+            "2": "增值税电子普通发票",
+            "3": "增值税普通发票",
+            "4": "机动车销售统一发票",
+            "5": "其他"
+        }
+        
+        # 付款类型选项
+        self.payment_type_options = {
+            "1": "科研费用",
+            "2": "办公费用",
+            "3": "差旅费用",
+            "4": "会议费用",
+            "5": "培训费用",
+            "6": "其他"
+        }
+        
+        # 科目明细选项
+        self.subject_detail_options = {
+            "1": "科研耗材",
+            "2": "办公用品",
+            "3": "设备采购",
+            "4": "软件服务",
+            "5": "咨询服务",
+            "6": "其他"
+        }
+        
+        # 默认选择（可以根据需要修改）
+        self.invoice_type = self.invoice_type_options["2"]  # 增值税电子普通发票
+        self.payment_type = self.payment_type_options["1"]  # 科研费用
+        self.subject_detail = self.subject_detail_options["1"]  # 科研耗材
         
     def extract_text_from_pdf(self, pdf_path: str) -> str:
         """从PDF中提取文本"""
@@ -84,17 +115,17 @@ class InvoiceProcessor:
         }
         
         # # 提取发票号码 - 通常是数字组合
-        # invoice_number_patterns = [
-        #     r'发票号码[：:](\d{8,})',
-        #     r'发票代码[：:]?(\d{10,12})',
-        #     r'No[.:]?\s*(\d{8,})',
-        #     r'(\d{20,})'
-        # ]
         invoice_number_patterns = [
-            r'发票号码[：:：\s]*([0-9]{8})',
-            r'Invoice No[.:]?\s*([0-9]{8})',
-            r'No[.:]?\s*([0-9]{8})'
-        ] 
+            r'发票号码[：:](\d{8,})',
+            r'发票代码[：:]?(\d{10,12})',
+            r'No[.:]?\s*(\d{8,})',
+            r'(\d{20,})'
+        ]
+        # invoice_number_patterns = [
+        #     r'发票号码[：:：\s]*([0-9]{8})',
+        #     r'Invoice No[.:]?\s*([0-9]{8})',
+        #     r'No[.:]?\s*([0-9]{8})'
+        # ] 
         for pattern in invoice_number_patterns:
             match = re.search(pattern, text)
             if match:
@@ -128,35 +159,9 @@ class InvoiceProcessor:
                         break
                 except ValueError:
                     continue
-        # 提取付款明细原因
-        # 提取付款明细原因 - 从项目明细中提取
-        reason_patterns = [
-            # 货物或应税劳务、服务名称
-            r'货物或应税劳务、服务名称[：:：\s]*([^\n\r\t]+?)(?=\s*规格型号|\s*单位|\s*数量|\s*单价|\s*金额|$)',
-            r'项目名称[：:：\s]*([^\n\r\t]+?)(?=\s*规格型号|\s*单位|\s*数量|\s*单价|\s*金额|$)',
-            r'商品名称[：:：\s]*([^\n\r\t]+?)(?=\s*规格型号|\s*单位|\s*数量|\s*单价|\s*金额|$)',
-            r'服务名称[：:：\s]*([^\n\r\t]+?)(?=\s*规格型号|\s*单位|\s*数量|\s*单价|\s*金额|$)',
-        ]
-
-        for pattern in reason_patterns:
-            match = re.search(pattern, text, re.MULTILINE | re.IGNORECASE)
-            if match:
-                reason = match.group(1).strip()
-                # 清理提取的文本
-                reason = re.sub(r'[\s\t]+', ' ', reason)  # 合并多个空白字符
-                reason = re.sub(r'^[*\-•]+\s*', '', reason)  # 移除开头的符号
-                
-                if len(reason) > 2 and not re.match(r'^[\d\s.]+$', reason) and '发票' not in reason:
-                    info["付款明细原因"] = reason[:50]  # 限制长度
-                    break
-
-        # 如果没有找到合适的原因，使用文件名
-        if not info["付款明细原因"]:
-            base_name = os.path.splitext(filename)[0]
-            if re.match(r'^\d+$', base_name):  # 如果文件名只是数字
-                info["付款明细原因"] = "科研项目相关费用"
-            else:
-                info["付款明细原因"] = base_name
+        # 直接使用文件名作为付款明细原因
+        base_name = os.path.splitext(filename)[0]
+        info["付款明细原因"] = base_name
         
         return info
     
@@ -251,19 +256,25 @@ class InvoiceProcessor:
         # 创建DataFrame
         df = pd.DataFrame(invoice_data)
         
-        # 确保列的顺序
+        # 确保列的顺序（不包含备注列）
         columns = ["付款明细原因", "项目负责人", "发票类型", "发票号码", "付款类型", "科目明细", "金额"]
-        if "备注" in df.columns:
-            columns.append("备注")
-        
         df = df.reindex(columns=columns, fill_value="")
         
         # 写入Excel
         with pd.ExcelWriter(output_path, engine='openpyxl') as writer:
-            df.to_excel(writer, sheet_name='报销明细', index=False)
+            df.to_excel(writer, sheet_name='报销明细', index=False, startrow=1)  # 从第2行开始写入数据
             
             # 获取工作表进行格式化
             worksheet = writer.sheets['报销明细']
+            
+            # 添加标题行"明细表1"
+            worksheet['A1'] = '明细表1'
+            # 合并标题行单元格（A1到G1）
+            worksheet.merge_cells('A1:G1')
+            # 设置标题格式
+            title_cell = worksheet['A1']
+            title_cell.font = Font(bold=True, size=14)
+            title_cell.alignment = Alignment(horizontal='center', vertical='center')
             
             # 设置列宽
             column_widths = {
@@ -276,17 +287,14 @@ class InvoiceProcessor:
                 'G': 12,  # 金额
             }
             
-            if "备注" in df.columns:
-                column_widths['H'] = 25  # 备注
-            
             for col, width in column_widths.items():
                 worksheet.column_dimensions[col].width = width
             
-            # 设置表头格式
+            # 设置表头格式（现在在第2行）
             header_font = Font(bold=True)
             header_alignment = Alignment(horizontal='center', vertical='center')
             
-            for cell in worksheet[1]:
+            for cell in worksheet[2]:  # 表头现在在第2行
                 cell.font = header_font
                 cell.alignment = header_alignment
             
@@ -303,8 +311,36 @@ class InvoiceProcessor:
                     cell.border = thin_border
                     if cell.column == 7:  # 金额列
                         cell.alignment = Alignment(horizontal='right')
+            
+            # 添加数据验证（下拉选项）
+            from openpyxl.worksheet.datavalidation import DataValidation
+            
+            # 发票类型下拉选项（C列）
+            invoice_type_options = ','.join(self.invoice_type_options.values())
+            dv_invoice_type = DataValidation(type="list", formula1=f'"{invoice_type_options}"')
+            dv_invoice_type.error = '请选择有效的发票类型'
+            dv_invoice_type.errorTitle = '输入错误'
+            worksheet.add_data_validation(dv_invoice_type)
+            dv_invoice_type.add(f'C3:C{len(df)+2}')  # 从第3行开始到数据结束
+            
+            # 付款类型下拉选项（E列）
+            payment_type_options = ','.join(self.payment_type_options.values())
+            dv_payment_type = DataValidation(type="list", formula1=f'"{payment_type_options}"')
+            dv_payment_type.error = '请选择有效的付款类型'
+            dv_payment_type.errorTitle = '输入错误'
+            worksheet.add_data_validation(dv_payment_type)
+            dv_payment_type.add(f'E3:E{len(df)+2}')  # 从第3行开始到数据结束
+            
+            # 科目明细下拉选项（F列）
+            subject_detail_options = ','.join(self.subject_detail_options.values())
+            dv_subject_detail = DataValidation(type="list", formula1=f'"{subject_detail_options}"')
+            dv_subject_detail.error = '请选择有效的科目明细'
+            dv_subject_detail.errorTitle = '输入错误'
+            worksheet.add_data_validation(dv_subject_detail)
+            dv_subject_detail.add(f'F3:F{len(df)+2}')  # 从第3行开始到数据结束
         
         logger.info(f"Excel报表已保存到: {output_path}")
+        logger.info("已为发票类型、付款类型、科目明细添加下拉选项")
 
 def main(folder_path: str):
     """主函数"""
@@ -351,10 +387,11 @@ def main(folder_path: str):
 if __name__ == "__main__":
     import sys
     
-    if len(sys.argv) != 2:
-        print("使用方法: python expense_request.py <发票文件夹路径>")
-        print("示例: python expense_request.py '/Users/lr-2002/Documents/报销材料/6.27/发票'")
-        sys.exit(1)
+    # if len(sys.argv) != 2:
+    #     print("使用方法: python expense_request.py <发票文件夹路径>")
+    #     print("示例: python expense_request.py '/Users/lr-2002/Documents/报销材料/6.27/发票'")
+    #     sys.exit(1)
     
-    folder_path = sys.argv[1]
+    # folder_path = sys.argv[1]
+    folder_path = '/Users/lr-2002/Documents/报销材料/6.27/发票'
     main(folder_path)
