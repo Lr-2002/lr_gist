@@ -1,5 +1,9 @@
 import pandas as pd
 import os
+import re
+from datetime import datetime
+from openpyxl import Workbook
+from openpyxl.styles import Font, Alignment, Border, Side
 
 def load_and_analyze_excel(file_path):
     """
@@ -47,6 +51,21 @@ def extract_successful_orders(df):
     # 筛选交易成功的订单
     successful_orders = df[df[status_column] == '交易成功']
     print(f"找到 {len(successful_orders)} 个交易成功的订单")
+    
+    # 根据订单号去重
+    order_id_column = None
+    for col in df.columns:
+        if '订单号' in col or 'order' in col.lower():
+            order_id_column = col
+            break
+    
+    if order_id_column:
+        before_dedup = len(successful_orders)
+        successful_orders = successful_orders.drop_duplicates(subset=[order_id_column])
+        after_dedup = len(successful_orders)
+        print(f"根据订单号去重：{before_dedup} -> {after_dedup} 个订单")
+    else:
+        print("未找到订单号列，跳过去重")
     
     # 提取所需字段
     extracted_data = []
@@ -113,15 +132,16 @@ def get_summary_statistics(data):
     # 统计金额
     amounts = []
     for order in data:
-
         amount_str = order.get('金额', '0')
-        if amount_str and isinstance(amount_str, str):
-            # 移除￥符号并转换为数字
-            amount_clean = amount_str.replace('￥', '').replace(',', '')
-            try:
-                amounts.append(float(amount_clean))
-            except ValueError:
-                continue
+        if amount_str:
+            amount_str = str(amount_str)
+            # 使用正则表达式提取数字（包括小数点）
+            numbers = re.findall(r'\d+\.?\d*', amount_str)
+            if numbers:
+                try:
+                    amounts.append(float(numbers[0]))
+                except ValueError:
+                    continue
     
     if amounts:
         total_amount = sum(amounts)
@@ -131,6 +151,120 @@ def get_summary_statistics(data):
         print(f"  平均金额: ￥{avg_amount:.2f}")
         print(f"  最高金额: ￥{max(amounts):.2f}")
         print(f"  最低金额: ￥{min(amounts):.2f}")
+
+def generate_procurement_request(orders_data, output_file):
+    """
+    根据订单数据生成采购申请表
+    """
+    try:
+        # 创建工作簿
+        wb = Workbook()
+        ws = wb.active
+        ws.title = "采购申请表"
+        
+        # 写入标题"明细表1"
+        ws.merge_cells('A1:G1')
+        title_cell = ws.cell(row=1, column=1, value="明细表1")
+        title_cell.font = Font(bold=True, size=14)
+        title_cell.alignment = Alignment(horizontal='center', vertical='center')
+        title_cell.border = Border(
+            left=Side(style='thin'),
+            right=Side(style='thin'),
+            top=Side(style='thin'),
+            bottom=Side(style='thin')
+        )
+        
+        # 设置表头
+        headers = ["物资一级分类", "物资名称", "规格型号", "单位", "数量", "估算单价/元", "估算总价/元"]
+        
+        # 写入表头（第2行）
+        for col, header in enumerate(headers, 1):
+            cell = ws.cell(row=2, column=col, value=header)
+            cell.font = Font(bold=True, size=12)
+            cell.alignment = Alignment(horizontal='center', vertical='center')
+            cell.border = Border(
+                left=Side(style='thin'),
+                right=Side(style='thin'),
+                top=Side(style='thin'),
+                bottom=Side(style='thin')
+            )
+        
+        # 填入数据（从第3行开始）
+        for row_idx, order in enumerate(orders_data, 3):
+            # 物资一级分类 - 固定为"科研耗材"
+            ws.cell(row=row_idx, column=1, value="科研耗材")
+            
+            # 物资名称 - 使用商品名称
+            product_name = order.get('商品名称', '')
+            ws.cell(row=row_idx, column=2, value=product_name)
+            
+            # 规格型号 - 也使用商品名称
+            ws.cell(row=row_idx, column=3, value=product_name)
+            
+            # 单位 - 固定为"批"
+            ws.cell(row=row_idx, column=4, value="批")
+            
+            # 数量 - 固定为1
+            ws.cell(row=row_idx, column=5, value=1)
+            
+            # 估算单价和总价 - 使用订单金额
+            amount_str = order.get('金额', '0')
+            amount = 0
+            if amount_str:
+                # 转换为字符串处理
+                amount_str = str(amount_str)
+                # 使用正则表达式提取数字（包括小数点）
+                numbers = re.findall(r'\d+\.?\d*', amount_str)
+                if numbers:
+                    try:
+                        amount = float(numbers[0])
+                    except ValueError:
+                        amount = 0
+            
+            # 估算单价
+            ws.cell(row=row_idx, column=6, value=amount)
+            
+            # 估算总价（数量为1，所以等于单价）
+            ws.cell(row=row_idx, column=7, value=amount)
+            
+            # 为数据行添加边框
+            for col in range(1, 8):
+                cell = ws.cell(row=row_idx, column=col)
+                cell.border = Border(
+                    left=Side(style='thin'),
+                    right=Side(style='thin'),
+                    top=Side(style='thin'),
+                    bottom=Side(style='thin')
+                )
+                cell.alignment = Alignment(horizontal='center', vertical='center')
+        
+        # 调整列宽
+        column_widths = [15, 30, 30, 8, 8, 15, 15]
+        column_letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
+        for i, width in enumerate(column_widths):
+            ws.column_dimensions[column_letters[i]].width = width
+        
+        # 保存文件
+        wb.save(output_file)
+        print(f"\n采购申请表已生成: {output_file}")
+        
+        # 显示生成的数据统计
+        total_amount = 0
+        for order in orders_data:
+            amount_str = order.get('金额', '0')
+            if amount_str:
+                amount_str = str(amount_str)
+                numbers = re.findall(r'\d+\.?\d*', amount_str)
+                if numbers:
+                    try:
+                        total_amount += float(numbers[0])
+                    except ValueError:
+                        continue
+        print(f"共生成 {len(orders_data)} 项采购申请")
+        print(f"总金额: ￥{total_amount:.2f}")
+        
+    except Exception as e:
+        print(f"生成采购申请表时出错: {e}")
 
 def main():
     # Excel文件路径
@@ -161,6 +295,11 @@ def main():
         if successful_orders:
             output_file = "/Users/lr-2002/project/lr_gist/bigai_related/报销系统/交易成功订单.xlsx"
             export_to_excel(successful_orders, output_file)
+            
+            # 生成采购申请表
+            today = datetime.now().strftime("%Y%m%d")
+            procurement_file = f"/Users/lr-2002/project/lr_gist/bigai_related/报销系统/{today}_采购申请表.xlsx"
+            generate_procurement_request(successful_orders, procurement_file)
         
         return successful_orders
 
