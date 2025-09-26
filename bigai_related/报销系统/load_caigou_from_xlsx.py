@@ -57,7 +57,7 @@ def extract_successful_orders(df):
         '商品名称': ['商品名称', '商品', '产品名称', '标题'],
         '型号规格': ['型号规格', '规格', '型号', '规格型号'],
         '商品数量': ['商品数量', '数量', '购买数量'],
-        '金额': ['金额', '商品金额', '价格', '总价', '实付金额']
+        '金额': [ '实付金额']
     }
     
     # 找到实际的列名
@@ -113,6 +113,7 @@ def get_summary_statistics(data):
     # 统计金额
     amounts = []
     for order in data:
+
         amount_str = order.get('金额', '0')
         if amount_str and isinstance(amount_str, str):
             # 移除￥符号并转换为数字
@@ -133,7 +134,7 @@ def get_summary_statistics(data):
 
 def main():
     # Excel文件路径
-    excel_file = "/Users/lr-2002/project/lr_gist/bigai_related/报销系统/data_sheet/订单数据.xlsx"
+    excel_file = "/Users/lr-2002/Documents/报销材料/9.26采购申请/订单数据.xlsx"
     
     if not os.path.exists(excel_file):
         print(f"文件不存在: {excel_file}")

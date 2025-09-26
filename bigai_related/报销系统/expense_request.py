@@ -150,8 +150,8 @@ class InvoiceProcessor:
         for pattern in amount_patterns:
             matches = re.findall(pattern, text, re.MULTILINE | re.IGNORECASE)
             if matches:
-                # 取第一个匹配的金额
-                amount_str = matches[0].replace(',', '')
+                # 取最后一个匹配的金额
+                amount_str = matches[-1].replace(',', '')
                 try:
                     amount = float(amount_str)
                     if amount > 0 and amount < 1000000:  # 合理的金额范围
@@ -393,5 +393,5 @@ if __name__ == "__main__":
     #     sys.exit(1)
     
     # folder_path = sys.argv[1]
-    folder_path = '/Users/lr-2002/Documents/报销材料/6.27/发票'
+    folder_path = '/Users/lr-2002/Documents/报销材料/7.18/发票'
     main(folder_path)
