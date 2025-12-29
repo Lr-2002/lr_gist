@@ -1,0 +1,119 @@
+{
+  "env": {
+    "ANTHROPIC_BASE_URL": "https://api.minimaxi.com/anthropic",
+    "ANTHROPIC_AUTH_TOKEN": "sk-cp-XL1S0_oMYZb3jJk5KMr02jPYxQbvqn2aqquC9GUEyxnSWwbrKeT4jR2IOyP06xC9A3sIP7OpNIq_E5TSTWleuJjoxbhVtI6MB9UsV6Y2rcBI43T0mEftaYg",
+    "API_TIMEOUT_MS": "3000000",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "ANTHROPIC_MODEL": "MiniMax-M2.1",
+    "ANTHROPIC_SMALL_FAST_MODEL": "MiniMax-M2.1",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "MiniMax-M2.1",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "MiniMax-M2.1",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "MiniMax-M2.1"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(npm run lint)",
+      "Bash(npm run test:*)",
+      "Bash(cd:*)",
+      "Bash(mkdir:*)",
+      "Bash(ls:*)",
+      "Bash(cmake:*)",
+      "Bash(make:*)",
+      "Bash(gcc:*)",
+      "Bash(g++:*)",
+      "Bash(clang:*)",
+      "Bash(clang++:*)",
+      "Bash(mkdir:*)",
+      "Bash(rm:*)",
+      "Bash(cmake --build:*)",
+      "Bash(make clean:*)",
+      "Bash(make install:*)",
+      "Bash(doxygen:*)",
+      "Bash(sphinx-build:*)",
+      "Bash(mkdocs:*)",
+      "Bash(pandoc:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "mcp__serena__list_dir",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(command:*)",
+      "Bash(brew install:*)",
+      "Bash(cat:*)",
+      "Bash(pwd:*)",
+      "Bash(tree:*)"
+    ],
+    "deny": [
+      "Bash(curl:*)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/claude-code-notifier.sh"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/claude-code-notifier.sh"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/claude-code-notifier.sh"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/claude-code-notifier.sh"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npx claude-code-manager track",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "superpowers@superpowers-marketplace": true,
+    "compound-engineering@every-marketplace": true,
+    "superpowers-developing-for-claude-code@superpowers-marketplace": true,
+    "context7@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true,
+    "agent-sdk-dev@claude-plugins-official": true,
+    "Notion@claude-plugins-official": true,
+    "pyright-lsp@claude-plugins-official": true,
+    "clangd-lsp@claude-plugins-official": true
+  },
+  "alwaysThinkingEnabled": true
+}
