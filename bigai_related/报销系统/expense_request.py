@@ -421,5 +421,6 @@ if __name__ == "__main__":
     # folder_path = sys.argv[1]
     # folder_path = '/Users/lr-2002/Documents/报销材料/7.18/发票'
     # folder_path = "/Users/lr-2002/Documents/报销材料/9.26采购申请/发票"
-    folder_path = "/Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/pdfs"
+    folder_path = "/Users/lr-2002/Documents/报销材料/结构"
+    # folder_path = "/Users/lr-2002/Documents/报销材料/cnc报销"
     main(folder_path)

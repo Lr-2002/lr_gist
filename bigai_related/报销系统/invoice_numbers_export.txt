@@ -1,0 +1,532 @@
+1001064086101692251982025: 1 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-刘晴晴-车票-北京_杭州.pdf
+
+1001073086101599848332025: 1 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-苏荣朋-车票-北京_杭州.pdf
+
+1001077086101592100432025: 1 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-夏弘宇-车票-北京_杭州.pdf
+
+1001093086101599361562025: 2 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/王先豪-高铁-去程.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-王先豪-车票-北京_杭州.pdf
+
+25112000000134284019: 1 files
+  - /Users/lr-2002/Documents/报销材料/6.27/发票/2.5螺丝.pdf
+
+25112000000181424802: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/dp1.2.pdf
+
+25112000000181434831: 3 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/绿联数据线.pdf
+  - /Users/lr-2002/Documents/报销材料/8.25/补充 2/绿联数据线.pdf
+  - /Users/lr-2002/Documents/报销材料/8.25/补充/绿联数据线.pdf
+
+25112000000182570091: 4 files
+  - /Users/lr-2002/Documents/报销材料/转接头.pdf
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/dp转接头.pdf
+  - /Users/lr-2002/Documents/报销材料/8.25/补充 2/dp转接头.pdf
+  - /Users/lr-2002/Documents/报销材料/8.25/补充/dp转接头.pdf
+
+25112000000187901585: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26舵机/发票/北京的线材.pdf
+
+25112000000206738423: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26采购申请/发票/型材 204 .pdf
+
+25112000000231264693: 3 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/王先豪-注册费-发票.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/3-王先豪-注册费-发票.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/pdfs/3-王先豪-注册费-发票.pdf
+
+25112000000231286368: 2 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/3-刘晴晴-注册费-发票.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/pdfs/3-刘晴晴-注册费-发票.pdf
+
+25112000000231306980: 2 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/3-刘立行-注册费-发票.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/pdfs/3-刘立行-注册费-发票.pdf
+
+25112000000231360286: 2 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/3-夏弘宇-注册费-发票.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/pdfs/3-夏弘宇-注册费-发票.pdf
+
+25112000000231361045: 2 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/3-苏荣朋-注册费-发票.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/pdfs/3-苏荣朋-注册费-发票.pdf
+
+25117000000826615550: 1 files
+  - /Users/lr-2002/Documents/报销材料/6.27/发票/屏幕.pdf
+
+25117000001011487871: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/拓展坞.pdf
+
+25117000001011487885: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/键盘鼠标1.pdf
+
+25117000001011487909: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/键盘2.pdf
+
+25117000001011487910: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/sd卡.pdf
+
+25117000001011487920: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/转换器.pdf
+
+25117000001118780320: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.15/fdcan.pdf
+
+25119110010004461228: 2 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-刘立行-车票-北京_杭州.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-刘立行-车票-北京_杭州.pdf
+
+25119110010004461252: 2 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-苏荣朋-车票-北京_杭州.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-苏荣朋-车票-北京_杭州.pdf
+
+25119110010004462032: 4 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/王先豪-高铁-去程.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/王先豪-高铁-去程.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-王先豪-车票-北京_杭州.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-王先豪-车票-北京_杭州.pdf
+
+25119110010004462135: 2 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-夏弘宇-车票-北京_杭州.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-夏弘宇-车票-北京_杭州.pdf
+
+25119110010004598138: 2 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-刘晴晴-车票-北京_杭州.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-刘晴晴-车票-北京_杭州.pdf
+
+25122000000066613203: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/扳手1.pdf
+
+25122000000073100927: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26采购申请/发票/薄.pdf
+
+25132000000136134562: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/便宜轴承.pdf
+
+25132000000136522962: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/轴承1.pdf
+
+25132000000136532723: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/轴承16.pdf
+
+25132000000136532776: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/轴承3.pdf
+
+25132000000136612015: 2 files
+  - /Users/lr-2002/Documents/报销材料/轴承4.pdf
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/轴承.pdf
+
+25132000000155681833: 1 files
+  - /Users/lr-2002/Documents/报销材料/轴承5.pdf
+
+25132000000155722017: 1 files
+  - /Users/lr-2002/Documents/报销材料/轴承6.pdf
+
+25132000000155751898: 3 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/轴承11.pdf
+  - /Users/lr-2002/Documents/报销材料/8.25/补充 2/轴承11.pdf
+  - /Users/lr-2002/Documents/报销材料/8.25/补充/轴承11.pdf
+
+25132000000155751939: 1 files
+  - /Users/lr-2002/Documents/报销材料/轴承12.pdf
+
+25132000000159000081: 1 files
+  - /Users/lr-2002/Documents/报销材料/轴承13.pdf
+
+25132000000162734540: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26采购申请/发票/17.5 滚动轴承.pdf
+
+25132000000175994534: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26采购申请/发票/轴承 50.pdf
+
+25312000000184437664: 1 files
+  - /Users/lr-2002/Documents/报销材料/6.27/发票/螺丝.pdf
+
+25312000000223766792: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/收纳箱.pdf
+
+25312000000239421433: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/螺丝刀.pdf
+
+25312000000246713783: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/导轨.pdf
+
+25312000000289771780: 3 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/轴承14.pdf
+  - /Users/lr-2002/Documents/报销材料/8.25/补充 2/轴承14.pdf
+  - /Users/lr-2002/Documents/报销材料/8.25/补充/轴承14.pdf
+
+25312000000296358650: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26采购申请/发票/收纳 .pdf
+
+25312000000315203487: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26采购申请/发票/289 电动螺丝刀.pdf
+
+25312000000318643144: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26采购申请/发票/地脚 97.pdf
+
+25312000000319748579: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26舵机/发票/stm32.pdf
+
+25317000001977615982: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/美团配送非.pdf
+
+25317000001977616003: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/美团配送费.pdf
+
+25322000000326770256: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/电源.pdf
+
+25322000000361372467: 2 files
+  - /Users/lr-2002/Documents/报销材料/螺丝1118.pdf
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/螺丝1118.pdf
+
+25322000000411059672: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/卷尺.pdf
+
+25322000000411272219: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26舵机/发票/132.pdf
+
+25322000000411548710: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26舵机/发票/锥齿轮.pdf
+
+25322000000429935388: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26采购申请/发票/47.2 锥齿轮.pdf
+
+25322000000463993600: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26采购申请/发票/118 锥齿轮.pdf
+
+25322000000509284603: 1 files
+  - /Users/lr-2002/Documents/报销材料/cnc报销/dzfp_25322000000509284603_北京通用人工智能研究院_20251031092256.pdf
+
+25322000000509313068: 1 files
+  - /Users/lr-2002/Documents/报销材料/cnc报销/dzfp_25322000000509313068_北京通用人工智能研究院_20251031092344.pdf
+
+25322000000509323387: 1 files
+  - /Users/lr-2002/Documents/报销材料/cnc报销/dzfp_25322000000509323387_北京通用人工智能研究院_20251031092506.pdf
+
+25322000000509381697: 1 files
+  - /Users/lr-2002/Documents/报销材料/cnc报销/dzfp_25322000000509381697_北京通用人工智能研究院_20251031092427.pdf
+
+25332000000304555526: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/扎带.pdf
+
+25332000000340861680: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/攻丝.pdf
+
+25332000000341340998: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/软轴.pdf
+
+25332000000389838624: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/舵机线.pdf
+
+25332000000390222015: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/舵机调试.pdf
+
+25332000000390222197: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/舵机.pdf
+
+25332000000390232493: 1 files
+  - /Users/lr-2002/Documents/报销材料/舵机线1.pdf
+
+25332000000390442653: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/扎带.pdf
+
+25332000000405984695: 1 files
+  - /Users/lr-2002/Documents/报销材料/滚针抽成.pdf
+
+25332000000406096346: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26舵机/发票/47.pdf
+
+25332000000406145491: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/飞特两个舵机+调试板.pdf
+
+25332000000406174232: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26舵机/发票/2912 1.pdf
+
+25332000000406195398: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26舵机/发票/2912 2.pdf
+
+25332000000406214350: 3 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/舵机线材new.pdf
+  - /Users/lr-2002/Documents/报销材料/8.25/补充 2/舵机线材new.pdf
+  - /Users/lr-2002/Documents/报销材料/8.25/补充/舵机线材new.pdf
+
+25332000000406233379: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26舵机/发票/75.pdf
+
+25332000000442710074: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26采购申请/发票/平面1  62.pdf
+
+25332000000470503527: 2 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/2-刘立行-酒店发票.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/pdfs/2-刘立行-酒店发票.pdf
+
+25332000000471424629: 3 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/三人（王先豪，苏荣朋，夏弘宇）-酒店-发票.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/2-三人（王先豪，苏荣朋，夏弘宇）-酒店-发票.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/pdfs/2-三人（王先豪，苏荣朋，夏弘宇）-酒店-发票.pdf
+
+25332000000479379801: 2 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/2-刘晴晴-酒店发票.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/pdfs/2-刘晴晴-酒店发票.pdf
+
+25339190041005788418: 2 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-刘立行-车票-杭州_北京.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-刘立行-车票-杭州_北京.pdf
+
+25339190041005788552: 2 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-苏荣朋-车票-杭州_北京.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-苏荣朋-车票-杭州_北京.pdf
+
+25339190041005789343: 4 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/王先豪-高铁-返程.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/王先豪-高铁-返程.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-王先豪-车票-杭州_北京.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-王先豪-车票-杭州_北京.pdf
+
+25339190041005789437: 2 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-夏弘宇-车票-杭州_北京.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-夏弘宇-车票-杭州_北京.pdf
+
+25339190041005942582: 2 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-刘晴晴-车票-杭州_北京.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-刘晴晴-车票-杭州_北京.pdf
+
+25342000000121023800: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/螺丝大.pdf
+
+25342000000134645753: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/螺丝.pdf
+
+25342000000134680929: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/螺丝1.pdf
+
+25342000000137567665: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/尼龙螺丝.pdf
+
+25342000000152790678: 1 files
+  - /Users/lr-2002/Documents/报销材料/螺丝2.pdf
+
+25342000000152820888: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/锉刀.pdf
+
+25342000000152840791: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/圆柱销.pdf
+
+25342000000152860472: 2 files
+  - /Users/lr-2002/Documents/报销材料/螺丝3.pdf
+  - /Users/lr-2002/Documents/报销材料/9.26采购申请/发票/41.3 螺丝.pdf
+
+25342000000156968914: 2 files
+  - /Users/lr-2002/Documents/报销材料/螺帽.pdf
+  - /Users/lr-2002/Documents/报销材料/9.26采购申请/发票/注塑 40。.pdf
+
+25342000000158306290: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26采购申请/发票/螺丝 12 .pdf
+
+25342000000158306360: 3 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/螺丝新.pdf
+  - /Users/lr-2002/Documents/报销材料/8.25/补充 2/螺丝新.pdf
+  - /Users/lr-2002/Documents/报销材料/8.25/补充/螺丝新.pdf
+
+25342000000158306393: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/螺丝13.8.pdf
+
+25342000000171445552: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26采购申请/发票/卡簧2.pdf
+
+25342000000171480242: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26采购申请/发票/螺丝 291.pdf
+
+25342000000171480254: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26采购申请/发票/卡簧1.pdf
+
+25372000000159539188: 1 files
+  - /Users/lr-2002/Documents/报销材料/6.27/发票/游标卡尺.pdf
+
+25372000000191060376: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/焊锡.pdf
+
+25372000000214048920: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/零件盒子.pdf
+
+25372000000218271165: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/断丝.pdf
+
+25372000000243991216: 1 files
+  - /Users/lr-2002/Documents/报销材料/热熔胶.pdf
+
+25372000000247343708: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/轴承100.pdf
+
+25372000000268821676: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26采购申请/发票/深沟球.pdf
+
+25412000000177674720: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/封口袋.pdf
+
+25412000000198536224: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/工作台.pdf
+
+25442000000424431018: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/面包板.pdf
+
+25442000000424432151: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/标定版.pdf
+
+25442000000428597935: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/数据线.pdf
+
+25442000000431649291: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/细线.pdf
+
+25442000000441505408: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/电池.pdf
+
+25442000000474348985: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/水口.pdf
+
+25442000000564979254: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26/发票/gaoqing1.pdf
+
+25442000000567193480: 4 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/魔术贴.pdf
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/魔术贴 copy.pdf
+  - /Users/lr-2002/Documents/报销材料/8.25/补充 2/魔术贴.pdf
+  - /Users/lr-2002/Documents/报销材料/8.25/补充/魔术贴.pdf
+
+25442000000571560123: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26/发票/gaoqing3.pdf
+
+25442000000573322667: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26/发票/gaoqing2.pdf
+
+25442000000617603488: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26采购申请/发票/倒角.pdf
+
+25442000000621540141: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26采购申请/发票/松紧.pdf
+
+25512000000209539246: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26舵机/发票/降压2+3.pdf
+
+25514000000009368051: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26采购申请/发票/角接触 158.pdf
+
+25922000000048175045: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/批头.pdf
+
+25952000000119541514: 1 files
+  - /Users/lr-2002/Documents/报销材料/6.27/发票/螺母邮费.pdf
+
+25952000000119551247: 1 files
+  - /Users/lr-2002/Documents/报销材料/6.27/发票/转换螺母.pdf
+
+25952000000133877119: 1 files
+  - /Users/lr-2002/Documents/报销材料/6.27/发票/薄膜传感器套装.pdf
+
+25952000000143039281: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/杜邦想.pdf
+
+25952000000143057454: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/按钮.pdf
+
+25952000000143506034: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/导轨.pdf
+
+25952000000144418893: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/铜柱.pdf
+
+25952000000153630279: 1 files
+  - /Users/lr-2002/Documents/报销材料/7.18/dzfp_25952000000153630279_北京通用人工智能研究院_20250728143203.pdf
+
+25952000000153650524: 2 files
+  - /Users/lr-2002/Documents/报销材料/7.18/dzfp_25952000000153650524_北京通用人工智能研究院_20250728143524.pdf
+  - /Users/lr-2002/Documents/报销材料/7.18/发票/达妙调试.pdf
+
+25952000000159446347: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/胶带.pdf
+
+25952000000159485663: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/粘贴.pdf
+
+25952000000161016631: 1 files
+  - /Users/lr-2002/Documents/报销材料/销.pdf
+
+25952000000164157306: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/海绵.pdf
+
+25952000000164818957: 3 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/摄像头.pdf
+  - /Users/lr-2002/Documents/报销材料/8.25/补充 2/摄像头.pdf
+  - /Users/lr-2002/Documents/报销材料/8.25/补充/摄像头.pdf
+
+25952000000180616251: 2 files
+  - /Users/lr-2002/Documents/报销材料/3d打印耗材.pdf
+  - /Users/lr-2002/Documents/报销材料/9.15/3d打印耗材.pdf
+
+25952000000184500928: 2 files
+  - /Users/lr-2002/Documents/报销材料/开发版.pdf
+  - /Users/lr-2002/Documents/报销材料/9.26舵机/发票/降压1 .pdf
+
+25952000000184562283: 1 files
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/6248.pdf
+
+25952000000184866372: 2 files
+  - /Users/lr-2002/Documents/报销材料/刮刀.pdf
+  - /Users/lr-2002/Documents/报销材料/9.26采购申请/发票/刮刀.pdf
+
+25952000000184881402: 1 files
+  - /Users/lr-2002/Documents/报销材料/降压模块.pdf
+
+25952000000191399771: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26舵机/发票/ttl 2 .pdf
+
+25952000000191496504: 1 files
+  - /Users/lr-2002/Documents/报销材料/电机线材.pdf
+
+25952000000191513069: 2 files
+  - /Users/lr-2002/Documents/报销材料/10010l.pdf
+  - /Users/lr-2002/Documents/报销材料/8.25/发票/10010l.pdf
+
+25952000000191796779: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26/发票/615.pdf
+
+25952000000193375516: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.15/电机.pdf
+
+25952000000194703345: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26舵机/发票/ttl 1.pdf
+
+25952000000201112301: 2 files
+  - /Users/lr-2002/Documents/报销材料/6248——ne.pdf
+  - /Users/lr-2002/Documents/报销材料/9.26采购申请/发票/6248.pdf
+
+25952000000209503182: 1 files
+  - /Users/lr-2002/Documents/报销材料/9.26/发票/102.pdf
+
+25954000000001593332: 1 files
+  - /Users/lr-2002/Documents/报销材料/6.27/发票/法兰.pdf
+
+33050161702700003328: 2 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/2-刘立行-酒店发票.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/pdfs/2-刘立行-酒店发票.pdf
+
+9004164086101598382282025: 1 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-刘晴晴-车票-杭州_北京.pdf
+
+9004173086101592608192025: 1 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-苏荣朋-车票-杭州_北京.pdf
+
+9004177086102297782692025: 1 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-夏弘宇-车票-杭州_北京.pdf
+
+9004193086101596626082025: 2 files
+  - /Users/lr-2002/Documents/报销材料/iros2025/王先豪-高铁-返程.pdf
+  - /Users/lr-2002/Documents/报销材料/iros2025/IROS2025_报销信息/1-王先豪-车票-杭州_北京.pdf
+
